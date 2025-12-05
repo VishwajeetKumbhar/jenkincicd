@@ -1,4 +1,6 @@
-FROM openjdk:17-jdk-alpine
+
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+COPY target/*.jar jenkincicd.jar
 EXPOSE 8081
-ADD target/jenkincicd.jar jenkincicd.jar
-ENTRYPOINT ["java", "-jar", "/jenkincicd.jar"]
+CMD ["java", "-jar", "jenkincicd.jar"]

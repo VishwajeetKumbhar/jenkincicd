@@ -13,6 +13,6 @@ public class HelloController {
 
     @GetMapping("/home")
     public String pritnHello(){
-        return "Hello From HomeController";
+        return "Hello vishwajeet Kumbhar";
     }
 }

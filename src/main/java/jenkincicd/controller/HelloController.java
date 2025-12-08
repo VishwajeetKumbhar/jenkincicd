@@ -10,4 +10,9 @@ public class HelloController {
     public String printName() {
         return "Hello World From Controller";
     }
+
+    @GetMapping("/home")
+    public String pritnHello(){
+        return "Hello From HomeController";
+    }
 }
